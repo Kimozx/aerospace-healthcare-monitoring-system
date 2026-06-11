@@ -174,7 +174,3 @@ This repository was cleaned and validated with editor diagnostics in the current
 5. The repository is organized so each component can be explained independently.
 
 More detail is in [c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/architecture.md](c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/architecture.md), [c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/api-contract.md](c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/api-contract.md), [c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/runbook.md](c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/runbook.md), and [c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/source-map.md](c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/docs/source-map.md).
-
-## Browser Preview
-
-If you want to see the project as a website without changing the implementation languages, open [c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/website/index.html](c:/Users/vtc13/Projects/aerospace-healthcare-monitoring-system/website/index.html) in a browser. It is a presentation-only view built with HTML and CSS and does not replace the original C++, Java, Python, C#, Assembly, or VHDL components.

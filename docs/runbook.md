@@ -8,7 +8,6 @@ This runbook explains how to start, validate, and demo the Aerospace and Healthc
 2. Start the Python analysis service.
 3. Build and run the C++ simulator.
 4. Launch the C# control panel.
-5. Open the browser preview if you want a presentation layer.
 
 ## Java Backend
 

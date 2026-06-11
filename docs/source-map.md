@@ -60,3 +60,14 @@ Shared sample payloads and cross-component examples.
 ## `vhdl-alert-circuit`
 
 Hardware-oriented alert logic model and testbench.
+
+## Implementation Scope
+
+This repository implementation is entirely focused on the original project languages:
+
+1. C++
+2. Java
+3. Python
+4. C#
+5. Assembly
+6. VHDL
