@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMS Runbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell site-shell--story">
+    <nav class="topbar">
+      <div class="topbar__brand">
+        <span class="brand-dot"></span>
+        <span>AHMS RUNBOOK</span>
+      </div>
+      <div class="topbar__links">
+        <a href="index.html">Overview</a>
+        <a href="dossier.html">Dossier</a>
+        <a href="mission-control.html">Mission Control</a>
+        <a href="demo-story.html">Demo Story</a>
+      </div>
+    </nav>
+
+    <header class="hero hero--compact">
+      <div class="hero__content">
+        <p class="eyebrow">Operations Guide</p>
+        <h1>Runbook</h1>
+        <p class="lead">Start, validate, and demo AHMS in a reliable order.</p>
+      </div>
+      <div class="hero__panel">
+        <div class="metric-card">
+          <p>Recommended Startup Order</p>
+          <ol>
+            <li>Java backend</li>
+            <li>Python analysis service</li>
+            <li>C++ simulator</li>
+            <li>C# control panel</li>
+            <li>Website preview</li>
+          </ol>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--split">
+        <div class="panel panel--code">
+          <p class="section__label">Java Backend</p>
+          <pre>Working directory: java-backend
+
+mvn spring-boot:run
+
+Checks:
+GET /api/health
+GET /api/sensors/latest
+GET /api/alerts</pre>
+        </div>
+        <div class="panel panel--code">
+          <p class="section__label">Python Analysis</p>
+          <pre>Working directory: python-analysis
+
+pip install -r requirements.txt
+python analyzer.py
+
+Checks:
+GET /health
+POST /api/analysis/run
+GET /api/analysis/report</pre>
+        </div>
+      </section>
+
+      <section class="section section--split">
+        <div class="panel panel--code">
+          <p class="section__label">C++ Simulator</p>
+          <pre>Working directory: cpp-simulator
+
+cmake -S . -B build
+cmake --build build
+.\build\sensor-simulator.exe</pre>
+        </div>
+        <div class="panel panel--code">
+          <p class="section__label">C# Control Panel</p>
+          <pre>Working directory: csharp-control-panel
+
+dotnet run</pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="panel">
+          <p class="section__label">Troubleshooting</p>
+          <ul class="rule-list">
+            <li>If analysis fails, confirm backend is running on port 8080.</li>
+            <li>If latest values are empty, test GET /api/sensors/latest.</li>
+            <li>If simulator cannot send, confirm localhost:8080 is reachable.</li>
+            <li>If alerts do not appear, call POST /api/analysis/run manually.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

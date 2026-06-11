@@ -1,0 +1,19 @@
+{
+  "temperature": 72.4,
+  "pressure": 32.8,
+  "vibration": 21.5,
+  "oxygenLevel": 96.3,
+  "heartRate": 78,
+  "batteryLevel": 84.0,
+  "timestamp": "2026-06-10T14:30:00Z",
+  "checksum": 710
+}{
+  "temperature": 84.7,
+  "pressure": 103.4,
+  "vibration": 73.2,
+  "oxygenLevel": 88.9,
+  "heartRate": 112,
+  "batteryLevel": 18.4,
+  "timestamp": "2026-06-10T15:45:10Z",
+  "checksum": 201
+}

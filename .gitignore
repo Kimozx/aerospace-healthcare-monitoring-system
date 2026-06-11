@@ -1,0 +1,21 @@
+# Java
+java-backend/target/
+java-backend/.mvn/
+
+# Python
+python-analysis/__pycache__/
+python-analysis/.pytest_cache/
+python-analysis/.venv/
+
+# C#
+csharp-control-panel/bin/
+csharp-control-panel/obj/
+
+# C++
+cpp-simulator/build/
+cpp-simulator/.cache/
+
+# General
+.DS_Store
+Thumbs.db
+*.log
